@@ -1,4 +1,4 @@
-name: download-and-transfor-gsheet-content
+name: Download & Transfor GSheet Content
 
 on:
   schedule:
@@ -16,7 +16,7 @@ jobs:
         with:
           spreadsheetId: ${{ secrets.GSHEET_ID }}
           commands: |
-            [ {"command": "getData", "args": { "range": "List_English!A:C" } } ]
+            [ {"command": "getData", "args": { "range": "Master!B:V" } } ]
         env:
           GSHEET_CLIENT_EMAIL: ${{ secrets.GSHEET_CLIENT_EMAIL }}
           GSHEET_PRIVATE_KEY: ${{ secrets.GSHEET_PRIVATE_KEY }}
