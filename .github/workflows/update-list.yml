@@ -1,8 +1,11 @@
-name: Download and update gSheet list
+name: download-and-transfor-gsheet-content
 
 on:
   schedule:
   - cron: '*/5 * * * *'
+  push:
+    branches:
+      - main
 
 jobs:
   fetch:
