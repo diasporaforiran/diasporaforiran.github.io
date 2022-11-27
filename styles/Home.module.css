@@ -1,0 +1,37 @@
+.container {
+    background-color: rgb(226, 52, 39);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container > main {
+    padding: 16px;
+    flex: auto 1 1;
+    max-width: 800px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container > main > div {
+    text-align: center;
+}
+
+.container > main > a {
+    display: block;
+    background-color: white;
+    border: 2px solid white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    transition: 0.2s all;
+}
+
+.container > main > a:hover {
+    background-color: transparent;
+    color: white;
+}
