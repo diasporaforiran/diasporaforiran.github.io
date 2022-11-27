@@ -25,7 +25,7 @@ jobs:
       - name: dump results
         env:
           RESULTS: ${{ steps.fetch_worksheet.outputs.results }}
-        run: echo "$RESULTS" | jq '.results.0.result.rawData' > array_format.json
+        run: echo "$RESULTS" | jq '.results[0]result.rawData' > array_format.json
       - name: push changes
         uses: test-room-7/action-update-file@v1
         with:
